@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes,HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Navbar from './components/Navbar';
@@ -14,6 +14,7 @@ import './App.css';
 const App = () => {
   return (
     <Provider store={store}>
+      <HashRouter basename="/">
       <Router>
         <div>
           <Navbar />
@@ -24,6 +25,7 @@ const App = () => {
           </Routes>
         </div>
       </Router>
+      </HashRouter>
     </Provider>
   );
 };

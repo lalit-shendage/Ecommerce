@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Ecommerce/static/css/main.266ce2e5.css",
+    "main.js": "/Ecommerce/static/js/main.9b860e4c.js",
+    "static/media/wesley-tingey-ZdOW9Qd8mQo-unsplash.jpg": "/Ecommerce/static/media/wesley-tingey-ZdOW9Qd8mQo-unsplash.86483c994f2ffd57be72.jpg",
+    "index.html": "/Ecommerce/index.html",
+    "main.266ce2e5.css.map": "/Ecommerce/static/css/main.266ce2e5.css.map",
+    "main.9b860e4c.js.map": "/Ecommerce/static/js/main.9b860e4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.266ce2e5.css",
+    "static/js/main.9b860e4c.js"
+  ]
+}
