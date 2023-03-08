@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes,HashRouter, } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Navbar from './components/Navbar';
@@ -15,14 +15,16 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
+      <HashRouter basename="/">
         <div>
           <Navbar />
           <Routes>
-            <Route exact path="/lalit-shendage/Ecommerce" element={<ItemList/>} />
-            <Route exact path="/lalit-shendage/Ecommerce/additem" element={<ItemForm/>} />
-            <Route exact path="/lalit-shendage/Ecommerce/cart" element={<Cart/>} />
+            <Route exact path="/" element={<ItemList/>} />
+            <Route exact path="/additem" element={<ItemForm/>} />
+            <Route exact path="/cart" element={<Cart/>} />
           </Routes>
         </div>
+        </HashRouter>
       </Router>
     </Provider>
   );
