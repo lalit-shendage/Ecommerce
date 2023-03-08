@@ -26,18 +26,18 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item mx-2 ">
-                <Link to="/lalit-shendage/Ecommerce/" style={{ textDecoration: "none", color:"white" }}>
+                <Link to="/" style={{ textDecoration: "none", color:"white" }}>
                   Products
                 </Link>
               </li>
               <li className="nav-item mx-2 ">
-                <Link to="/lalit-shendage/Ecommerce/addItem" style={{ textDecoration: "none" , color:"white"}}>
+                <Link to="/addItem" style={{ textDecoration: "none" , color:"white"}}>
                   Add Item
                 </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <Link to="/lalit-shendage/Ecommerce/cart" style={{ textDecoration: "none",  color:"white" }}>
+              <Link to="/cart" style={{ textDecoration: "none",  color:"white" }}>
                 <h4 className="mx-2 my-2">
                   <i className="fa-solid fa-cart-shopping"></i>
                 </h4>

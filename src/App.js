@@ -18,9 +18,9 @@ const App = () => {
         <div>
           <Navbar />
           <Routes>
-            <Route exact path="/lalit-shendage/Ecommerce" element={<ItemList/>} />
-            <Route exact path="/lalit-shendage/Ecommerce/additem" element={<ItemForm/>} />
-            <Route exact path="/lalit-shendage/Ecommerce/cart" element={<Cart/>} />
+            <Route exact path="/" element={<ItemList/>} />
+            <Route exact path="/additem" element={<ItemForm/>} />
+            <Route exact path="/cart" element={<Cart/>} />
           </Routes>
         </div>
       </Router>
