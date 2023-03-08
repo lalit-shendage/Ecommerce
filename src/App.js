@@ -23,7 +23,6 @@ const App = () => {
             <Route exact path="/lalit-shendage/Ecommerce/cart" element={<Cart/>} />
           </Routes>
         </div>
-        <div></div>
       </Router>
     </Provider>
   );
