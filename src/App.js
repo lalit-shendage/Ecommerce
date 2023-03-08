@@ -24,6 +24,7 @@ const App = () => {
             <Route exact path="/cart" element={<Cart/>} />
           </Routes>
         </div>
+        <div></div>
       </Router>
       </HashRouter>
     </Provider>
