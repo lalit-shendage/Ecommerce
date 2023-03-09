@@ -23,18 +23,17 @@ const ProductItem = (props) => {
     }
   }, [showAlert]);
 
+  // inline editing
   const edit = (event) => {
     setText(event.target.innerText);
     setEditedText(event.target.innerText);
-    // dispatch(editItem(id));
-    // console.log("edit is clicked");
-    // alert("editing item details");
-    // setShowAlert(true);
   };
   const handleToggleEditable = () => {
     setEditable(!editable);
     dispatch(editItem(editedText));
   };
+
+  // deleting item from database
   const remove = (id) => {
     console.log("delete start");
     console.log(props.id);
@@ -43,6 +42,8 @@ const ProductItem = (props) => {
     alert("item is deleted from database");
     setShowAlert(true);
   };
+
+  // inserting item in cart
   const addtocart = (id) => {
     dispatch(addToCart(props));
     console.log(props);
@@ -51,6 +52,7 @@ const ProductItem = (props) => {
     setShowAlert(true);
   };
 
+  // implementation of item rating 
   let n = [];
   for (var i = 0; i < stars; i++) {
     n.push(<i className="fa fa-star star" key={i + 5}></i>);

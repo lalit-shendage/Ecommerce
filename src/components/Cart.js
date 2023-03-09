@@ -18,6 +18,7 @@ const Cart = () => {
     }
   }, [showAlert]);
 
+  // remove item from cart
   const handleRemoveFromCart = (itemId) => {
     alert("item is removed from cart");
     dispatch(removeFromCart(itemId));
