@@ -12,7 +12,7 @@ export const addToCart = (item) => {
     payload: item
   };
 };
-
+//  remove from cart
 export const removeFromCart = id => {
     console.log(id)
   return {

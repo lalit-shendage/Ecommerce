@@ -61,29 +61,3 @@ export const addItemRequest = () => ({
     payload: error,
   });
   
-//   export const addItemToDatabase = (item) => {
-//     return (dispatch) => {
-//       dispatch(addItemRequest());
-//       return addItem(item)
-//         .then((response) => {
-//           dispatch(addItemSuccess(response.data));
-//         })
-//         .catch((error) => {
-//           dispatch(addItemFailure(error.message));
-//         });
-//     };
-//   };
-
-//   export const addItemToDatabase = (item) => {
-//     return (dispatch) => {
-//       dispatch(addItemRequest());
-//       axios
-//         .post(`${BASE_API}`, item)
-//         .then((response) => {
-//           dispatch(addItemSuccess(response.data));
-//         })
-//         .catch((error) => {
-//           dispatch(addItemFailure(error.message));
-//         });
-//     };
-//   };
