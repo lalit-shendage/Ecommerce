@@ -2,7 +2,7 @@
   "homepage": "https://github.com/lalit-shendage/Ecommerce",
   "name": "kartcg",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
